@@ -7,7 +7,10 @@
   "scripts": {
     "build": "vite build && vite build --mode client",
     "dev": "vite",
-    "deploy": "$npm_execpath build && wrangler pages deploy ./dist"
+    "deploy": "$npm_execpath build && wrangler pages deploy ./dist",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "fix": "prettier --write . && eslint --fix ."
   },
   "dependencies": {
     "@hono/vite-dev-server": "^0.0.7",
@@ -22,7 +25,14 @@
     "@sonikjs/cloudflare-pages": "^0.0.1",
     "@types/node": "^20.8.6",
     "@types/react": "^18.2.20",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
     "bun-types": "^1.0.6",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.0.3",
     "vite": "^4.4.11",
     "wrangler": "^3.13.1"
   }

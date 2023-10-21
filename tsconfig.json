@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "types": [
-      "bun-types",
-      "@cloudflare/workers-types",
-      "vite/client",
-    ],
+    "types": ["bun-types", "@cloudflare/workers-types", "vite/client"],
 
     "lib": ["ESNext"],
     "target": "ESNext",
@@ -21,6 +17,6 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-  },
+    "esModuleInterop": true
+  }
 }
