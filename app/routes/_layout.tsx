@@ -3,6 +3,7 @@ import type { LayoutHandler } from "@sonikjs/react";
 const handler: LayoutHandler = ({ children, head }) => (
   <html lang="ja">
     <head>
+      <title>VISX-DEMO</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {import.meta.env.PROD ? (
         <>
@@ -17,19 +18,7 @@ const handler: LayoutHandler = ({ children, head }) => (
       )}
       {head.createTags()}
     </head>
-    <body>
-      <div className="wrapper">
-        <header>
-          <h1>
-            <a href="/">Top</a>
-          </h1>
-        </header>
-        {children}
-        <footer style={{ marginTop: "2rem" }}>
-          <small>© 2023 your name</small>
-        </footer>
-      </div>
-    </body>
+    <body>{children}</body>
   </html>
 );
 
