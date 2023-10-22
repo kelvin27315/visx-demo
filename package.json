@@ -13,6 +13,7 @@
     "fix": "prettier --write . && eslint --fix ."
   },
   "dependencies": {
+    "@fontsource/m-plus-1p": "^5.0.16",
     "@hono/vite-dev-server": "^0.0.7",
     "@sonikjs/react": "^0.0.4",
     "hono": "^3.7.6",
