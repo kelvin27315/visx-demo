@@ -1,4 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"]
+  "extends": ["config:recommended"],
+  "dependencyDashboard": true,
+  "prHourlyLimit": 0,
+  "timezone": "Asia/Tokyo",
+  "schedule": ["after 10am"],
+  "automergeSchedule": ["after 10am"],
+  "enabledManagers": ["bun", "github-actions"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "lockFileMaintenance"],
+      "autoApprove": true,
+      "automerge": true
+    }
+  ]
 }
