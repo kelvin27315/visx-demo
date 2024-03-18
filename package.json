@@ -7,8 +7,7 @@
   "scripts": {
     "build": "vite build && vite build --mode client",
     "dev": "wrangler dev --live-reload src/index.tsx",
-    "format": "prettier --write .",
-    "lint": "eslint .",
+    "check": "prettier --check . && eslint .",
     "fix": "prettier --write . && eslint --fix ."
   },
   "dependencies": {

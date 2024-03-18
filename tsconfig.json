@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["bun-types", "@cloudflare/workers-types", "vite/client"],
+    "types": ["bun-types", "@cloudflare/workers-types"],
 
     "lib": ["ESNext"],
     "target": "ESNext",
@@ -12,7 +12,7 @@
     "moduleDetection": "force",
 
     "jsx": "react-jsx",
-    "jsxImportSource": "react",
+    "jsxImportSource": "hono/jsx",
 
     "strict": true,
     "forceConsistentCasingInFileNames": true,

@@ -1,45 +1,54 @@
 import js from "@eslint/js";
-import prettier from "eslint-config-prettier";
+import prettierPlugin from "eslint-config-prettier";
 import tsParser from "@typescript-eslint/parser";
-import ts from "@typescript-eslint/eslint-plugin";
+import tsPlugin from "@typescript-eslint/eslint-plugin";
 import reactPlugin from "eslint-plugin-react";
 import importPlugin from "eslint-plugin-import";
 import globals from "globals";
 
 export default [
   js.configs.recommended,
-  prettier,
+  prettierPlugin,
   {
-    files: ["src/**/*.{ts,tsx}"],
+    files: ["app/**/*.{ts,tsx}"],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
-        ecmaFeatures: {
-          jsx: true,
-        },
+        project: true,
       },
       globals: {
         ...globals.browser,
       },
     },
     plugins: {
-      "@typescript-eslint": ts,
+      "@typescript-eslint": tsPlugin,
       react: reactPlugin,
       import: importPlugin,
     },
     settings: {
-      "import/resolver": {
-        typescript: true,
-        node: true,
+      react: {
+        version: "detect",
       },
     },
     rules: {
-      ...ts.configs["recommended-type-checked"].rules,
-      ...importPlugin.configs["recommended"].rules,
-      "react/jsx-uses-react": "error",
-      "react/jsx-users-vars": "error",
+      ...tsPlugin.configs["recommended-type-checked"].rules,
+      ...reactPlugin.configs.recommended.rules,
+      "import/order": [
+        "error",
+        {
+          groups: ["builtin", "external"],
+          pathGroups: [
+            {
+              pattern: "@/**",
+              pathGroups: "internal",
+            },
+          ],
+          "newlines-between": "always",
+          alphabetize: {
+            order: "asc",
+          },
+        },
+      ],
     },
   },
 ];
