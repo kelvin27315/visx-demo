@@ -1,16 +1,17 @@
 import js from "@eslint/js";
-import prettierPlugin from "eslint-config-prettier";
-import tsParser from "@typescript-eslint/parser";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
+import prettierPlugin from "eslint-config-prettier";
 import reactPlugin from "eslint-plugin-react";
 import importPlugin from "eslint-plugin-import";
 import globals from "globals";
 
 export default [
+  { ignores: [".wrangler", "eslint.config.js", "dist/**/*"] },
   js.configs.recommended,
   prettierPlugin,
   {
-    files: ["app/**/*.{ts,tsx}"],
+    files: ["src/**/*.{ts,tsx}"],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
@@ -37,12 +38,6 @@ export default [
         "error",
         {
           groups: ["builtin", "external"],
-          pathGroups: [
-            {
-              pattern: "@/**",
-              pathGroups: "internal",
-            },
-          ],
           "newlines-between": "always",
           alphabetize: {
             order: "asc",
