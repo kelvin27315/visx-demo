@@ -30,7 +30,7 @@
     "@types/react-dom": "18.2.22",
     "@typescript-eslint/eslint-plugin": "7.3.1",
     "@typescript-eslint/parser": "7.3.1",
-    "bun-types": "1.0.33",
+    "bun-types": "1.0.34",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
