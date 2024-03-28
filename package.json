@@ -35,7 +35,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-react": "7.34.1",
-    "globals": "14.0.0",
+    "globals": "15.0.0",
     "prettier": "3.2.5",
     "typescript": "5.4.3",
     "vite": "5.2.6",
