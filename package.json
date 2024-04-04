@@ -27,7 +27,7 @@
     "@hono/vite-cloudflare-pages": "0.2.5",
     "@hono/vite-dev-server": "0.10.0",
     "@types/react": "18.2.74",
-    "@types/react-dom": "18.2.23",
+    "@types/react-dom": "18.2.24",
     "@typescript-eslint/eslint-plugin": "7.5.0",
     "@typescript-eslint/parser": "7.5.0",
     "bun-types": "1.1.0",
