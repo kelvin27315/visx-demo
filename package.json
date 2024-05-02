@@ -38,7 +38,7 @@
     "globals": "15.1.0",
     "prettier": "3.2.5",
     "typescript": "5.4.5",
-    "vite": "5.2.10",
+    "vite": "5.2.11",
     "wrangler": "3.53.0"
   }
 }
