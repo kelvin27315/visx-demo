@@ -39,6 +39,6 @@
     "prettier": "3.5.3",
     "typescript": "5.8.2",
     "vite": "5.4.14",
-    "wrangler": "3.113.0"
+    "wrangler": "3.114.0"
   }
 }
