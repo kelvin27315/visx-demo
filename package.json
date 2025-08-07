@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20250807.0",
-    "@hono/eslint-config": "1.1.1",
+    "@hono/eslint-config": "2.0.3",
     "@hono/vite-cloudflare-pages": "0.4.2",
     "@hono/vite-dev-server": "0.20.1",
     "@types/react": "18.3.23",
