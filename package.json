@@ -18,16 +18,16 @@
     "@visx/scale": "3.12.0",
     "@visx/zoom": "3.12.0",
     "hono": "4.9.2",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20250816.0",
     "@hono/eslint-config": "2.0.3",
     "@hono/vite-cloudflare-pages": "0.4.2",
     "@hono/vite-dev-server": "0.20.1",
-    "@types/react": "18.3.23",
-    "@types/react-dom": "18.3.7",
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.7",
     "@typescript-eslint/eslint-plugin": "8.39.1",
     "@typescript-eslint/parser": "8.39.1",
     "bun-types": "1.2.20",
